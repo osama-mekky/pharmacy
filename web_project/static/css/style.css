@@ -16,7 +16,7 @@ a:hover{
 
 body{
     /*background-color: antiquewhite;*/
-    font-family: 'Merienda', cursive;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding-top:65px;
 }
 
@@ -49,11 +49,11 @@ body{
 
 .navbar-custom {
   transition:0.5s;
-  background-color: #5A020Cce; 
+  background-color: #0fb3cf; 
 }
 
 .navbar-custom:hover:not(footer) {
-  background-color: #71131Eee; 
+  background-color: #0a7e92; 
 }
 
 .navbar li{
@@ -72,7 +72,7 @@ body{
 
 
 #coffee-nav-item{
-  background-color:#5A020Cce;
+  background-color:#0fb3cf;
   border-radius: 25px;
 }
 
@@ -148,7 +148,7 @@ input[type=number]:focus,
 
 
 .jumbotron{
-  background-color: antiquewhite;
+  background-color: rgb(255, 255, 255);
   color: #71131E;
 }
 

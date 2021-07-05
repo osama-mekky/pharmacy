@@ -1,6 +1,6 @@
 {% extends 'base.html'  %}
 {% load static %}
-
+{% block title  %}Home{% endblock %}
 {% block content %}
     <!-- <form action="add" method="POST">
         {%  csrf_token %}
@@ -23,13 +23,13 @@
     <section>
       <div class="jumbotron jumbotron-fluid p-3 m-0 text-center" >
         <div class="d-inline-block align-top" >
-          <h1 class="display-4">Pharmacy</h1>
-          <p class="lead" >
+          <h1 class="display-4" style="color: #0fb3cf;">Ghaya Pharmacy</h1>
+          <p class="lead" style="color: black;" >
             It Is Health That is Real Wealth
           </p>
         </div>
         <div class="d-inline-block">
-          <img src="{% static 'img/coffee.svg'%}" class="mycoffee-svg" alt="">
+          <img src="{% static 'img/icon3.svg'%}" class="mycoffee-svg" alt="">
         </div>
       </div>
     </section>
@@ -42,23 +42,23 @@
         <div class="carousel-inner">
 
           <div class="carousel-item active" data-interval="1500">
-              <img src="{% static 'img/img1.jpg'%}" class="d-block w-100" alt="...">
+              <img src="{% static 'img/1.jpg'%}" class="d-block w-100" alt="..." style="width: 450px;height:450px;" >
           </div>
 
           <div class="carousel-item" data-interval="1500">
-            <img src="{% static 'img/img2.jpg'%}" class="d-block w-100" alt="...">
+            <img src="{% static 'img/2.jpg'%}" class="d-block w-100" alt="..." style="width: 450px;height:450px;">
           </div>
 
           <div class="carousel-item" data-interval="1500">
-            <img src="{% static 'img/img3.jpg'%}" class="d-block w-100" alt="...">
+            <img src="{% static 'img/3.jpg'%}" class="d-block w-100" alt="..." style="width: 450px;height:450px;">
           </div>
 
           <div class="carousel-item" data-interval="1500">
-            <img src="{% static 'img/img4.jpg'%}" class="d-block w-100" alt="...">
+            <img src="{% static 'img/4.jpg'%}" class="d-block w-100" alt="..." style="width: 450px;height:450px;">
           </div>
 
           <div class="carousel-item" data-interval="1500">
-            <img src="{% static 'img/img5.jpg'%}" class="d-block w-100" alt="...">
+            <img src="{% static 'img/5.jpg'%}" class="d-block w-100" alt="..." style="width: 450px;height:450px;">
           </div>
 
         </div>
@@ -68,13 +68,14 @@
 
     <!--jumbotron 2-->
     <section>
-      <div class="jumbotron rounded-bottom">
-        <h1 class="display-4">Coffee is my world</h1>
-        <p class="lead">Many good health reasons to drink coffee.</p>
+      <div class="jumbotron rounded-bottom" style="color: black;">
+        <h1 class="display-4">pharmacology Is Important</h1>
+        <p class="lead">It is the science of studying chemical compounds that have a therapeutic effect.</p>
         <hr class="my-4">
-        <p>Caffeine stimulates your nervous system, signaling fat cells to break down body fat.</p>
-        <p>Coffee appears to be protective against two types of cancer: liver and colorectal cancer.</p>
-        <a class="btn btn-warning btn-lg" href="#" role="button">Learn more</a>
+        <p>Pharmacology can be defined as the study of substances that
+          interact with living systems through chemical processes</p>
+        <p>Paleo Pharmacological studies attest to the use of medicinal plants in pre-history.</p>
+        <a class="btn btn-warning btn-lg" href="{% url 'pharmacology' %}" role="button">Learn more</a>
       </div>
     </section>
 
@@ -85,10 +86,10 @@
       <h1 class="text-center">Latest products</h1>
       <div class="container-fluid">
         <div class="row p-5" style="padding-left: 17% !important;">
-{% for pro in products|slice:':6' %} 
+{% for pro in products|slice:':9' %} 
           <div>
             <div class="card m-2" style="width: 18rem;">
-              <img src="{{pro.photo.url}}" class="card-img-top" alt="{{pro.name}}">
+              <img src="{{pro.photo.url}}" class="card-img-top" alt="{{pro.name}}" style="width: 280px;height:280px">
               <div class="card-body">
                 <h5 class="card-title">{{pro.name}}</h5>
                 <!-- <p class="card-text">{{pro.description}}</p> -->
@@ -106,18 +107,18 @@
     <!--jumbotron 2-->
     <section>
       <div class="jumbotron">
-        <p class="h1">
+        <p class="h1" style="color: black;">
           <svg class="bi bi-info-circle-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" d="M8 16A8 8 0 108 0a8 8 0 000 16zm.93-9.412l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM8 5.5a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"/>
           </svg>
           An additional note
         </p>
-        <p class="lead">
+        <p class="lead" style="color: black;">
           <svg class="bi bi-bookmark-plus" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" d="M4.5 2a.5.5 0 00-.5.5v11.066l4-2.667 4 2.667V8.5a.5.5 0 011 0v6.934l-5-3.333-5 3.333V2.5A1.5 1.5 0 014.5 1h4a.5.5 0 010 1h-4zm9-1a.5.5 0 01.5.5v2a.5.5 0 01-.5.5h-2a.5.5 0 010-1H13V1.5a.5.5 0 01.5-.5z" clip-rule="evenodd"/>
             <path fill-rule="evenodd" d="M13 3.5a.5.5 0 01.5-.5h2a.5.5 0 010 1H14v1.5a.5.5 0 01-1 0v-2z" clip-rule="evenodd"/>
           </svg>
-          When people think of coffee, they usually think of its ability to provide an energy boost. However, according to some research, it can also offer some other important health benefits, such as a lower risk of liver cancer, type 2 diabetes, and heart failure.
+          We all know about the bad habits we have that can cause serious health problems,Take care of yourself well
         </p>
       </div>
     </section>

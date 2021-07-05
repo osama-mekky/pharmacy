@@ -1,19 +1,21 @@
 {% extends 'base.html' %}
 {% load static %}
+{% block title %}Products{% endblock %}
 {% block content %}
 
 <div class="my-form container p-5 my-5 rounded border border-warning">
     <form>
         <h2 class="text-center">
-          All Products
-        <hr> 
+           Products
+           <hr>
+         
         <section>
           <div class="container-fluid">
             <div class="row p-5" >
 {% for pro in products %} 
 <div>
   <div class="card m-2" style="width: 18rem;">
-    <img src="{{pro.photo.url}}" class="card-img-top" alt="{{pro.name}}">
+    <img src="{{pro.photo.url}}" class="card-img-top" alt="{{pro.name}}" style="width: 280px;height:280px">
     <div class="card-body">
       <h5 class="card-title">{{pro.name}}</h5>
       <!-- <p class="card-text">{{pro.description}}</p> -->
@@ -21,7 +23,11 @@
     </div>
   </div>
 </div>
-
+{% empty %}
+<h4 class="alert alert-waring">
+  No Products Here,
+  <a href="{% url 'products' %}" class="text-dark">All Products</a>
+</h4>
 {% endfor %} 
 
               </div>

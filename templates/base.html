@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" href="{% static 'css/pretty-checkbox.min.css' %}">
-    <title>Pharmacy</title>
+    <title>Pharmacy | {% block title %}{% endblock %}</title>
 </head>
 <body bgcolor="Aqua">
     {% include 'partials/_navbar.html' %}
@@ -27,6 +27,16 @@
         $('[data-toggle="popover"]').popover()
     })
     $(".year").text( (new Date).getFullYear() );
+    if($('body').height()<600){
+        $('body').height(600);
+    }
+
+    $(document).ready(function(){
+        $('#staticBackdrop').on('shown.bs.modal',function(){
+            $(this).find('#inputQty').focus();
+            $(this).find('#inputQty').select();
+        });
+    });
 </script>    
     
 </body>

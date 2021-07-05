@@ -10,3 +10,6 @@ def home(request):
 
 def about(request):
     return render(request,'about.html')
+
+def pharmacology(request):
+    return render(request,'pharmacology.html')

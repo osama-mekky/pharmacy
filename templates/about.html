@@ -1,59 +1,58 @@
 {% extends 'base.html'  %}
 
 {% load static %}
+{% block title %}About{% endblock %}
 {% block content %}
 
 <div class="my-content container p-5 my-5 rounded border border-warning">
-    <h1 class="text-center">
+    <h1 class="text-center" style="color: #0fb3cf;">
         <svg class="bi bi-info-square" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" d="M14 1H2a1 1 0 00-1 1v12a1 1 0 001 1h12a1 1 0 001-1V2a1 1 0 00-1-1zM2 0a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V2a2 2 0 00-2-2H2z" clip-rule="evenodd"/>
             <path d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z"/>
             <circle cx="8" cy="4.5" r="1"/>
         </svg>
-        About My Coffee Company
+        About Us
+
         <div class="d-inline-block">
-            <img src="{% static 'img/coffee2.svg'%}" class="w-100" alt="">
+            
         </div>
+    </h1>
+    <br>
+    <p style="font-size: large;">Ghaya Pharmacies offers integrated pharmaceutical services from sale to end-of-sale services, through pharmaceutical awareness and the provision of rare medicines to our patients, serving our pharmacies located in most governorates of the Republic.</p>
+    <p style="font-size: large;">To provide an integrated pharmacy service to our customers, in a timely manner and in a suitable manner, and reduce the administrative obstacles that may disrupt any step towards the health and well-being of the customers of Abdeen pharmacies.</p>
+    <br>
+    <h1 style="text-align: center; color:#0fb3cf">
+        In cooperation with
     </h1>
     <hr>
     <div class="clearfix row">
-        <p class="col-10 lead">My Coffee company is a pioneer in the field of coffee for more than 50 years</p>
-        <img src="{% static 'img/coffee3.svg'%}" class="col-2 float-right about-img rounded-circle" alt="">
+        <p class="col-10 lead">19011 pharmacies chain started about 3 years ago, through 7 pharmacy partners</p>
+        <img src="{% static 'img/19011.svg'%}" class="col-2 float-right " alt="">
     </div>
     <hr>
     <div class="clearfix row">
-        <p class="col-10 lead">My Coffee Owns coffee plantations in many countries for the most common types of coffee</p>
-        <img src="{% static 'img/farm.svg'%}" class="col-2 float-right about-img rounded-circle" alt="">
+        <p class="col-10 lead">Misr Pharmacies is one of the leading Egyptian pharmacies chains that are keen on integrating their services to provide health care, educate the community and provide a distinctive shopping experience for a healthier and more beautiful life.</p>
+        <img src="{% static 'img/masr.jpg'%}" class="col-2 float-right " alt="">
     </div>
     <hr>
     <div class="clearfix row">
-        <p class="col-10 lead">My Coffee is one of the largest coffee suppliers in the world</p>
-        <img src="{% static 'img/supply.svg'%}" class="col-2 float-right about-img rounded-circle" alt="">
+        <p class="col-10 lead">Dawaee pharmacies is one of the most prominent pharmacy chains in the market and spread in 10 governorates: Cairo, Giza, Alexandria, Suez, Ismailia, Port Said, Sharkia, Gharbia, Qalyubia and Damietta</p>
+        <img src="{% static 'img/dawaee.png'%}" class="col-2 float-right " alt="">
     </div>
     <hr>
     <div class="clearfix row">
-        <p class="col-10 lead">My Coffee Company factories fill coffee to international standards</p>
-        <img src="{% static 'img/factory.svg'%}" class="col-2 float-right about-img rounded-circle" alt="">
+        <p class="col-10 lead">Rosheta pharmacies is one of the best pharmacies and has a good reputation and has 3 branches</p>
+        <img src="{% static 'img/rpshetta.png'%}" class="col-2 float-right " alt="">
     </div>
     <hr>
     <div class="clearfix row">
-        <p class="col-10 lead">Quality of products is much more important to a My Coffee company</p>
-        <img src="{% static 'img/quality.svg'%}" class="col-2 float-right about-img rounded-circle" alt="">
+        <p class="col-10 lead">Agzakhana pharmacies is one of the most prominent pharmacy chains in the market spread in 48 governorates</p>
+        <img src="{% static 'img/alagzakhana.png'%}" class="col-2 float-right " alt="">
     </div>
     <hr>
     <div class="clearfix row">
-        <p class="col-10 lead">We offer you rare types of exquisite international coffee</p>
-        <img src="{% static 'img/coffee4.svg'%}" class="col-2 float-right about-img rounded-circle" alt="">
-    </div>
-    <hr>
-    <div class="clearfix row">
-        <p class="col-10 lead">The company's workers are experts and have high efficiency</p>
-        <img src="{% static 'img/employee.svg'%}" class="col-2 float-right about-img rounded-circle" alt="">
-    </div>
-    <hr>
-    <div class="clearfix row">
-        <p class="col-10 lead">My Coffee company have fast drinks stores everywhere</p>
-        <img src="{% static 'img/coffee5.svg'%}" class="col-2 float-right about-img rounded-circle" alt="">
+        <p class="col-10 lead">El-Ezaby Pharmacy is the largest pharmacy chain in Egypt. Until (December) 2015, the company owns 90 stores in different governorates of Egypt. The company was established in Cairo in 1975. The headquarters of the company's management is located in the Nasr City district in Cairo.</p>
+        <img src="{% static 'img/elezaby.jpg'%}" class="col-2 float-right " alt="">
     </div>
     <hr>
 </div>
